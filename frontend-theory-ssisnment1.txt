@@ -1,0 +1,211 @@
+Frontend - Assignment 1
+
+Q1. Explain the HTTP Request–Response Cycle with a suitable diagram. Describe the major steps involved when a client (browser) requests a resource from a web server and receives a response.
+
+Answer:
+
+HTTP stands for hyper text transfer protocol.It is the process in which a browser sends a request to a web server and gets a response.
+
+These are the following steps:-
+1)User
+2)Browser
+3)HTTP Request
+4)Web Server
+5)HTTP Response
+6)Web Page
+
+The user enters a URL in the browser. The browser sends a request to the server. The server processes the request and sends the required webpage as a response. The browser then displays the webpage.
+
+
+Q2. Briefly explain the purpose and key features of the following web technologies:
+1. HTML
+2. CSS
+3. JavaScript
+4. Bootstrap
+5. jQuery
+6. React.js
+
+Answer:
+
+1. HTML
+
+HTML stands for Hypertext Markup Language. It is used to make the basic structure of a webpage like headings, paragraphs, images, links and tables.
+
+2. CSS
+
+CSS stands for Cascading Style Sheets. It is used to style a webpage such as colors, fonts, spacing and layout.
+
+3. JavaScript
+
+JavaScript is used to make webpages interactive. It can handle clicks, change content and perform different actions.
+
+4. Bootstrap
+
+Bootstrap is a frontend framework which provides ready-made styles and components. It is also useful for making responsive websites.
+
+5. jQuery
+
+jQuery is a JavaScript library which makes tasks like changing HTML elements, events and animations easier.
+
+
+
+Q3. What are client-side technologies and server-side technologies? Explain the difference between them with suitable examples.
+
+Answer:
+
+Client-side technologies mainly run in the user browser. They are used for the visible part of the website and user interaction. Examples are HTML, CSS and JavaScript.
+
+Server-side technologies run on the web server. They are used for processing requests, handling data and backend work. Examples are Node.js, PHP and Python.
+
+Client-side runs in the browser, while server-side runs on the server.
+
+
+Q4. What are block-level elements in HTML? Explain their characteristics and provide at least three examples.
+
+Answer:
+
+Block-level elements normally start from a new line and take the available width of the container.
+
+Examples are <div>, <p>, <h1>, <section> and <article>.
+
+
+Q5. What are semantic elements in HTML? Explain their importance in web development and provide suitable examples.
+
+Answer:
+
+Semantic elements are HTML elements whose names tell about the content inside them. They make the structure of a webpage easier to understand.
+
+Examples are <header>, <nav>, <section> and <footer>.
+
+They also help search engines and screen readers understand the webpage better.
+
+
+Q6. Write HTML code to create the following table:
+
+Sr. No. Name Designation Department
+1 John Manager Sales
+2 Smith Sr. Manager Marketing
+3 Jane Manager HR
+
+The table should include appropriate table headings, rows, and columns.
+
+Answer:
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<table border="3">
+<tr>
+<th>Sr. No.</th>
+<th>Name</th>
+<th>Designation</th>
+<th>Department</th>
+</tr>
+
+<tr>
+	<td>1</td>
+	<td>John</td>
+	<td>Manager</td>
+	<td>Sales</td>
+</tr>
+
+<tr>
+	<td>2</td>
+	<td>Smitth</td>
+	<td>Manager</td>
+	<td>Marketing</td>
+</tr>
+
+<tr>
+	<td>3</td>
+	<td>Jane</td>
+	<td>Manager</td>
+	<td>HR</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+Q7. Write HTML code to create the following list using an appropriate combination of ordered/unordered lists:
+
+-River
+-Ganga
+-Yamuna
+-Brahmaputra
+-Narmada
+
+Answer:
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<ul>
+	<li>River
+<ul>
+	<li>Ganga</li>
+	<li>Yamuna</li>
+	<li>Brahmaputra</li>
+	<li>Narmada</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
+
+
+Q8. Explain the different types of CSS used for applying styles to an HTML document. Describe each type with a suitable example.
+
+Answer:
+
+There are three types of CSS.
+
+1. Inline CSS:
+
+-It is written directly inside an HTML tag.
+<p style="color:red;">Hello</p>
+it can affect only line in which it is used.
+
+2. Internal CSS:
+-It is written inside the style tag in the same HTML file.
+-it can affect class.
+
+
+
+3. External CSS
+
+It is written in a separate CSS file.
+
+
+
+Q9. Differentiate between HTML, CSS, and JavaScript based on their role in developing a web page. Explain what each technology contributes to a website.
+
+Answer:
+
+-HTML is used to create the structure of a webpage.
+-CSS is used to design the webpage and control its appearance.
+-JavaScript is used to add interaction and make the webpage work dynamically.
+-HTML gives the structure, CSS gives the design and JavaScript gives the interaction.
+
+
+Q10. Answer the following:
+
+a. What is the role of Bootstrap in web development?
+
+Answer: Bootstrap is a frontend framework which helps in creating responsive websites quickly. It provides ready-made components like buttons, forms and navigation bars.
+
+b. What is jQuery and why was it widely used in web development?
+
+Answer: jQuery is a JavaScript library which makes JavaScript tasks easier. It was widely used for DOM manipulation, events, animations and AJAX.
+
+c. What is React.js and what problem does it solve in frontend development?
+
+Answer:
+
+React.js is a JavaScript library used for building user interfaces. It uses reusable components, which makes large and interactive frontend applications easier to manage.
