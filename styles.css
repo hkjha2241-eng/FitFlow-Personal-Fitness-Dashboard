@@ -1,0 +1,134 @@
+/* Basic Page Setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Layout */
+.navbar {
+    background-color: #0b1d3a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #eaf2f8;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1 {
+    margin: 0;
+    color: #0b1d3a;
+}
+
+.hero-text h3 {
+    color: #1d5288;
+    margin-top: 5px;
+}
+
+.cv-btn {
+    background-color: #0b1d3a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.profile-img {
+    background-color: #1d5288;
+    padding: 80;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eaf2f8;
+}
+
+/* Project Cards */
+.project-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex: 1;
+    background-color: #fafafa;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background-color: #0b1d3a;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+.reset-btn {
+    background-color: #ccc;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0b1d3a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
