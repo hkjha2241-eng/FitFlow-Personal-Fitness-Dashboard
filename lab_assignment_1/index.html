@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harsh Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <div class="navbar">
+        <h2>Harsh Kumar</h2>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Harsh Kumar</h1>
+            <h3>Web Developer</h3>
+            <p>I am a computer science student with an interest in web development and machine learning projects.</p>
+            <button class="cv-btn">Download CV</button>
+        </div>
+        <img src="profile.jpg" alt="HK" class="profile-img">
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- About and Skills Row -->
+        <div class="row">
+            <div class="card" id="about">
+                <h3>About Me</h3>
+                <p>I am a quick learner and enjoy solving problems using programming, computer vision, and modern web tools.</p>
+            </div>
+
+            <div class="card" id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card full-width" id="education">
+            <h3>Education</h3>
+            <table border="1">
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>B.Tech (CSE)</td>
+                    <td>GLA UNIVERSITY</td>
+                    <td>2026</td>
+                    <td>8.6 CGPA</td>
+                </tr>
+                <tr>
+                    <td>12th Grade</td>
+                    <td>Karl Hubar School</td>
+                    <td>2022</td>
+                    <td>85%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card full-width" id="projects">
+            <h3>Projects</h3>
+            <div class="row">
+                <div class="project-box">
+                    <h4>1. FitFlow Fitness Dashboard</h4>
+                    <p>A frontend fitness application for tracking workouts and daily health routines.</p>
+                </div>
+                <div class="project-box">
+                    <h4>2. Face Detection System</h4>
+                    <p>A custom YOLOv8 model application designed to detect faces in uploaded images.</p>
+                </div>
+                <div class="project-box">
+                    <h4>3. Forest-One Risk Predictor</h4>
+                    <p>A machine learning project that predicts wildfire risks using satellite data.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="card full-width" id="contact">
+            <h3>Contact Me</h3>
+            <form>
+                <label>Name:</label><br>
+                <input type="text" placeholder="Enter your name"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" placeholder="Enter your email"><br><br>
+
+                <label>Message:</label><br>
+                <textarea rows="4" placeholder="Enter your message"></textarea><br><br>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 Harsh Kumar. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
