@@ -1,0 +1,67 @@
+Theory Assignment – 3
+
+Name: Aanya Maheswari
+
+1. What is the difference between frontend and backend JavaScript?
+Frontend JavaScript runs in the user's web browser and makes a website interactive. It can respond to clicks, validate forms, update page content, and change styles by working with the DOM. Backend JavaScript runs on a server, commonly using Node.js. It handles tasks such as processing requests, working with databases, authentication, and business logic.
+Example: Frontend JavaScript can check whether an email field is empty, while backend JavaScript can verify login details against stored user data.
+2. What is DOM?
+DOM stands for Document Object Model. It is a tree-like representation of an HTML document created by the browser. JavaScript can use the DOM to access and change HTML elements, text, attributes, and CSS styles.
+Example: document.querySelector("#heading").textContent = "Hello"; changes the text of the element whose id is heading.
+3. What is an event in JavaScript?
+An event is an action or occurrence that JavaScript can detect and respond to. Events can be caused by the user, such as clicking a button, typing in a field, or submitting a form, or by the browser, such as a page finishing loading.
+Example: button.addEventListener("click", function () { alert("Button clicked!"); }); runs a function when the button is clicked.
+4. What is the event loop in JavaScript?
+The event loop is the mechanism that helps JavaScript handle asynchronous tasks while running its main code. JavaScript executes synchronous code on the call stack. When the stack is clear, the event loop helps schedule queued callbacks to run. Promise callbacks (microtasks) are generally processed before timer and other task-queue callbacks.
+Example: setTimeout(() => console.log("Later"), 0) does not run before the synchronous code that follows it; it runs after the current call stack is clear.
+5. What is hoisting in JavaScript?
+Hoisting describes how JavaScript processes declarations before executing code in their scope. Function declarations can generally be called before their written position. Variables declared with var are hoisted and initialized to undefined. Variables declared with let and const are also registered for the scope, but cannot be accessed before their declaration is evaluated; this period is called the temporal dead zone.
+Example: console.log(x); var x = 5; prints undefined, whereas accessing a let variable before its declaration causes a ReferenceError.
+6. What is event bubbling?
+Event bubbling is when an event that occurs on a nested element propagates upward through its parent elements. For example, clicking a button inside a div can trigger click handlers on the button, then the div, and then other ancestors.
+Bubbling can be stopped with event.stopPropagation() when needed.
+7. What is the difference between named function, anonymous function and arrow function?
+A named function has a name and can be declared using function. It is useful when the function needs to be called by name or reused.
+Example: function greet() { console.log("Hello"); }
+An anonymous function has no function name. It is often assigned to a variable or passed as a callback.
+Example: const greet = function () { console.log("Hello"); };
+An arrow function uses the => syntax and provides a shorter way to write a function. It does not have its own this value.
+Example: const greet = () => { console.log("Hello"); };
+A key difference is that ordinary functions have their own this depending on how they are called, while arrow functions inherit this from their surrounding scope.
+8. Explain for-of and for-in loop?
+A for...of loop iterates over the values of an iterable, such as an array or string.
+Example:
+const fruits = ["apple", "mango"];
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+A for...in loop iterates over enumerable property keys of an object. For an array, it gives the index keys rather than the element values.
+Example:
+const person = { name: "Asha", age: 20 };
+for (const key in person) {
+  console.log(key, person[key]);
+}
+In short: for...of is usually used for values in arrays and strings; for...in is commonly used for keys in objects.
+9. Explain any five array methods?
+1.	1. push(): Adds one or more elements to the end of an array.
+2.	   Example: let a = [1, 2]; a.push(3); // [1, 2, 3]
+3.	2. pop(): Removes and returns the last element.
+4.	   Example: let a = [1, 2, 3]; a.pop(); // a becomes [1, 2]
+5.	3. shift(): Removes and returns the first element.
+6.	   Example: let a = [1, 2, 3]; a.shift(); // a becomes [2, 3]
+7.	4. unshift(): Adds one or more elements to the beginning.
+8.	   Example: let a = [2, 3]; a.unshift(1); // [1, 2, 3]
+9.	5. map(): Creates a new array by applying a function to each element.
+10.	   Example: [1, 2, 3].map(n => n * 2); // [2, 4, 6]
+push, pop, shift, and unshift modify the original array. map returns a new array.
+10. What is a callback method?
+A callback is a function passed as an argument to another function so that it can be called later. Callbacks are commonly used for event handling and asynchronous operations.
+Example:
+function greet(name, callback) {
+  console.log("Hello, " + name);
+  callback();
+}
+greet("Asha", function () {
+  console.log("Welcome!");
+});
+Here, the second function is the callback because it is passed to greet and called from inside greet.
