@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background: #f1f5f9; margin: 0; padding: 40px 15px; }
+.container { max-width: 380px; margin: auto; padding: 25px; background: white; border-radius: 10px; box-shadow: 0 3px 12px #0001; }
+h1 { text-align: center; }
+label { display: block; margin-top: 14px; }
+input { width: 100%; box-sizing: border-box; padding: 10px; margin-top: 5px; }
+button { width: 100%; padding: 11px; margin-top: 18px; border: 0; background: #2563eb; color: white; border-radius: 5px; cursor: pointer; }
+#result { text-align: center; font-weight: bold; }
